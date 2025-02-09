@@ -1,0 +1,207 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> pip install flake8
+Collecting flake8
+  Using cached flake8-7.1.1-py2.py3-none-any.whl.metadata (3.8 kB)
+Requirement already satisfied: mccabe<0.8.0,>=0.7.0 in c:\users\israel\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from flake8) (0.7.0)
+Collecting pycodestyle<2.13.0,>=2.12.0 (from flake8)
+  Using cached pycodestyle-2.12.1-py2.py3-none-any.whl.metadata (4.5 kB)
+Collecting pyflakes<3.3.0,>=3.2.0 (from flake8)
+  Using cached pyflakes-3.2.0-py2.py3-none-any.whl.metadata (3.5 kB)
+Using cached flake8-7.1.1-py2.py3-none-any.whl (57 kB)
+Using cached pycodestyle-2.12.1-py2.py3-none-any.whl (31 kB)
+Using cached pyflakes-3.2.0-py2.py3-none-any.whl (62 kB)
+Installing collected packages: pyflakes, pycodestyle, flake8
+  WARNING: The script pyflakes.exe is installed in 'C:\Users\Israel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pycodestyle.exe is installed in 'C:\Users\Israel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script flake8.exe is installed in 'C:\Users\Israel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed flake8-7.1.1 pycodestyle-2.12.1 pyflakes-3.2.0
+
+[notice] A new release of pip is available: 24.2 -> 25.0
+[notice] To update, run: C:\Users\Israel\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> flake8 compute_sales.py
+flake8 : The term 'flake8' is not recognized as the name of a cmdlet, function, scriptfile, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ flake8 compute_sales.py
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (flake8:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python -m flake8 compute_sales.py
+compute_sales.py:2:80: E501 line too long (82 > 79 characters)
+compute_sales.py:2:83: W291 trailing whitespace
+compute_sales.py:3:72: W291 trailing whitespace
+compute_sales.py:10:1: E302 expected 2 blank lines, found 1
+compute_sales.py:11:80: E501 line too long (91 > 79 characters)
+compute_sales.py:22:1: E302 expected 2 blank lines, found 1
+compute_sales.py:23:76: W291 trailing whitespace
+compute_sales.py:27:80: E501 line too long (84 > 79 characters)
+compute_sales.py:29:80: E501 line too long (80 > 79 characters)
+compute_sales.py:39:80: E501 line too long (93 > 79 characters)
+compute_sales.py:42:80: E501 line too long (98 > 79 characters)
+compute_sales.py:44:80: E501 line too long (156 > 79 characters)
+compute_sales.py:44:125: E261 at least two spaces before inline comment
+compute_sales.py:54:1: E302 expected 2 blank lines, found 1
+compute_sales.py:59:80: E501 line too long (137 > 79 characters)
+compute_sales.py:59:106: E261 at least two spaces before inline comment
+compute_sales.py:65:80: E501 line too long (83 > 79 characters)
+compute_sales.py:85:80: E501 line too long (81 > 79 characters)
+compute_sales.py:113:1: E305 expected 2 blank lines after class or function definition, found 1
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y apython -m flake8 compute_sales.py
+compute_sales.py:2:80: E501 line too long (82 > 79 characters)
+compute_sales.py:2:83: W291 trailing whitespace
+compute_sales.py:3:72: W291 trailing whitespace
+compute_sales.py:10:1: E302 expected 2 blank lines, found 1
+compute_sales.py:11:80: E501 line too long (91 > 79 characters)
+compute_sales.py:22:1: E302 expected 2 blank lines, found 1
+compute_sales.py:23:76: W291 trailing whitespace
+compute_sales.py:27:80: E501 line too long (84 > 79 characters)
+compute_sales.py:29:80: E501 line too long (80 > 79 characters)
+compute_sales.py:39:80: E501 line too long (93 > 79 characters)
+compute_sales.py:42:80: E501 line too long (98 > 79 characters)
+compute_sales.py:44:80: E501 line too long (156 > 79 characters)
+compute_sales.py:44:125: E261 at least two spaces before inline comment
+compute_sales.py:54:1: E302 expected 2 blank lines, found 1
+compute_sales.py:59:80: E501 line too long (137 > 79 characters)
+compute_sales.py:59:106: E261 at least two spaces before inline comment
+compute_sales.py:65:80: E501 line too long (83 > 79 characters)
+compute_sales.py:85:80: E501 line too long (81 > 79 characters)
+compute_sales.py:113:1: E305 expected 2 blank lines after class or function definition, found 1
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python
+ -m flake8 compute_sales.py
+compute_sales.py:2:66: W291 trailing whitespace
+compute_sales.py:3:65: W291 trailing whitespace
+compute_sales.py:4:24: W291 trailing whitespace
+compute_sales.py:11:1: E302 expected 2 blank lines, found 1
+compute_sales.py:12:80: E501 line too long (91 > 79 characters)
+compute_sales.py:23:1: E302 expected 2 blank lines, found 1
+compute_sales.py:24:76: W291 trailing whitespace
+compute_sales.py:28:80: E501 line too long (84 > 79 characters)
+compute_sales.py:30:80: E501 line too long (80 > 79 characters)
+compute_sales.py:40:80: E501 line too long (93 > 79 characters)
+compute_sales.py:43:80: E501 line too long (98 > 79 characters)
+compute_sales.py:45:80: E501 line too long (156 > 79 characters)
+compute_sales.py:45:125: E261 at least two spaces before inline comment
+compute_sales.py:55:1: E302 expected 2 blank lines, found 1
+compute_sales.py:60:80: E501 line too long (137 > 79 characters)
+compute_sales.py:60:106: E261 at least two spaces before inline comment
+compute_sales.py:66:80: E501 line too long (83 > 79 characters)
+compute_sales.py:86:80: E501 line too long (81 > 79 characters)
+compute_sales.py:114:1: E305 expected 2 blank lines after class or function definition, found 1
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python
+ -m flake8 compute_sales.py
+compute_sales.py:2:57: W291 trailing whitespace
+compute_sales.py:3:56: W291 trailing whitespace
+compute_sales.py:4:42: W291 trailing whitespace
+compute_sales.py:11:1: E302 expected 2 blank lines, found 1
+compute_sales.py:12:80: E501 line too long (91 > 79 characters)
+compute_sales.py:23:1: E302 expected 2 blank lines, found 1
+compute_sales.py:24:76: W291 trailing whitespace
+compute_sales.py:28:80: E501 line too long (84 > 79 characters)
+compute_sales.py:30:80: E501 line too long (80 > 79 characters)
+compute_sales.py:40:80: E501 line too long (93 > 79 characters)
+compute_sales.py:43:80: E501 line too long (98 > 79 characters)
+compute_sales.py:45:80: E501 line too long (156 > 79 characters)
+compute_sales.py:45:125: E261 at least two spaces before inline comment
+compute_sales.py:55:1: E302 expected 2 blank lines, found 1
+compute_sales.py:60:80: E501 line too long (137 > 79 characters)
+compute_sales.py:60:106: E261 at least two spaces before inline comment
+compute_sales.py:66:80: E501 line too long (83 > 79 characters)
+compute_sales.py:86:80: E501 line too long (81 > 79 characters)
+compute_sales.py:114:1: E305 expected 2 blank lines after class or function definition, found 1
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python
+ -m flake8 compute_sales.py
+compute_sales.py:13:80: E501 line too long (91 > 79 characters)
+compute_sales.py:26:76: W291 trailing whitespace
+compute_sales.py:30:80: E501 line too long (84 > 79 characters)
+compute_sales.py:32:80: E501 line too long (80 > 79 characters)
+compute_sales.py:42:80: E501 line too long (93 > 79 characters)
+compute_sales.py:45:80: E501 line too long (98 > 79 characters)
+compute_sales.py:47:80: E501 line too long (156 > 79 characters)
+compute_sales.py:47:125: E261 at least two spaces before inline comment
+compute_sales.py:63:80: E501 line too long (137 > 79 characters)
+compute_sales.py:63:106: E261 at least two spaces before inline comment
+compute_sales.py:69:80: E501 line too long (83 > 79 characters)
+compute_sales.py:89:80: E501 line too long (81 > 79 characters)
+compute_sales.py:117:1: E305 expected 2 blank lines after class or function definition, found 1
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python
+ -m flake8 compute_sales.py
+compute_sales.py:31:80: E501 line too long (84 > 79 characters)
+compute_sales.py:33:80: E501 line too long (80 > 79 characters)
+compute_sales.py:43:80: E501 line too long (93 > 79 characters)
+compute_sales.py:46:80: E501 line too long (98 > 79 characters)
+compute_sales.py:48:80: E501 line too long (156 > 79 characters)
+compute_sales.py:48:125: E261 at least two spaces before inline comment
+compute_sales.py:64:80: E501 line too long (137 > 79 characters)
+compute_sales.py:64:106: E261 at least two spaces before inline comment
+compute_sales.py:70:80: E501 line too long (83 > 79 characters)
+compute_sales.py:90:80: E501 line too long (81 > 79 characters)
+compute_sales.py:118:1: E305 expected 2 blank lines after class or function definition, found 1
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python
+ -m flake8 compute_sales.py
+compute_sales.py:31:80: E501 line too long (84 > 79 characters)
+compute_sales.py:33:80: E501 line too long (80 > 79 characters)
+compute_sales.py:43:80: E501 line too long (93 > 79 characters)
+compute_sales.py:46:80: E501 line too long (98 > 79 characters)
+compute_sales.py:48:80: E501 line too long (157 > 79 characters)
+compute_sales.py:64:80: E501 line too long (138 > 79 characters)
+compute_sales.py:70:80: E501 line too long (83 > 79 characters)
+compute_sales.py:90:80: E501 line too long (81 > 79 characters)
+compute_sales.py:118:1: E305 expected 2 blank lines after class or function definition, found 1
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python
+ -m flake8 compute_sales.py
+compute_sales.py:31:80: E501 line too long (84 > 79 characters)
+compute_sales.py:33:80: E501 line too long (80 > 79 characters)
+compute_sales.py:43:80: E501 line too long (93 > 79 characters)
+compute_sales.py:46:80: E501 line too long (98 > 79 characters)
+compute_sales.py:48:80: E501 line too long (157 > 79 characters)
+compute_sales.py:64:80: E501 line too long (138 > 79 characters)
+compute_sales.py:70:80: E501 line too long (83 > 79 characters)
+compute_sales.py:90:80: E501 line too long (81 > 79 characters)
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python
+ -m flake8 compute_sales.py
+compute_sales.py:31:56: W291 trailing whitespace
+compute_sales.py:47:80: E501 line too long (98 > 79 characters)
+compute_sales.py:49:80: E501 line too long (157 > 79 characters)
+compute_sales.py:65:80: E501 line too long (138 > 79 characters)
+compute_sales.py:71:80: E501 line too long (83 > 79 characters)
+compute_sales.py:91:80: E501 line too long (81 > 79 characters)
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python
+ -m flake8 compute_sales.py
+compute_sales.py:47:80: E501 line too long (98 > 79 characters)
+compute_sales.py:49:80: E501 line too long (157 > 79 characters)
+compute_sales.py:65:80: E501 line too long (138 > 79 characters)
+compute_sales.py:71:80: E501 line too long (83 > 79 characters)
+compute_sales.py:91:80: E501 line too long (81 > 79 characters)
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python
+ -m flake8 compute_sales.py
+compute_sales.py:47:80: E501 line too long (81 > 79 characters)
+compute_sales.py:49:80: E501 line too long (157 > 79 characters)
+compute_sales.py:65:80: E501 line too long (138 > 79 characters)
+compute_sales.py:71:80: E501 line too long (83 > 79 characters)
+compute_sales.py:91:80: E501 line too long (81 > 79 characters)
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python
+ -m flake8 compute_sales.py
+compute_sales.py:49:80: E501 line too long (157 > 79 characters)
+compute_sales.py:65:80: E501 line too long (138 > 79 characters)
+compute_sales.py:71:80: E501 line too long (83 > 79 characters)
+compute_sales.py:91:80: E501 line too long (81 > 79 characters)
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python
+ -m flake8 compute_sales.py
+compute_sales.py:65:80: E501 line too long (138 > 79 characters)
+compute_sales.py:71:80: E501 line too long (83 > 79 characters)
+compute_sales.py:91:80: E501 line too long (81 > 79 characters)
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python
+ -m flake8 compute_sales.py
+compute_sales.py:71:80: E501 line too long (83 > 79 characters)
+compute_sales.py:91:80: E501 line too long (81 > 79 characters)
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python
+ -m flake8 compute_sales.py
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2>

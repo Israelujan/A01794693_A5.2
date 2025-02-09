@@ -1,0 +1,95 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> pip install pylint
+Requirement already satisfied: pylint in c:\users\israel\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (3.3.4)
+Requirement already satisfied: dill>=0.3.6 in c:\users\israel\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from pylint) (0.3.9)
+Requirement already satisfied: platformdirs>=2.2.0 in c:\users\israel\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from pylint) (4.3.6)
+Requirement already satisfied: astroid<=3.4.0-dev0,>=3.3.8 in c:\users\israel\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from pylint) (3.3.8)
+Requirement already satisfied: isort!=5.13.0,<7,>=4.2.5 in c:\users\israel\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from pylint) (6.0.0)
+Requirement already satisfied: mccabe<0.8,>=0.6 in c:\users\israel\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from pylint) (0.7.0)
+Requirement already satisfied: tomlkit>=0.10.1 in c:\users\israel\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from pylint) (0.13.2)
+Requirement already satisfied: colorama>=0.4.5 in c:\users\israel\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from pylint) (0.4.6)
+
+[notice] A new release of pip is available: 24.2 -> 25.0
+[notice] To update, run: C:\Users\Israel\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> pylint computeSales.py
+pylint : The term 'pylint' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ pylint computeSales.py
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (pylint:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> pip show pylint
+Name: pylint
+Version: 3.3.4
+Summary: python code static checker
+Home-page: https://github.com/pylint-dev/pylint
+Author:
+Author-email: Python Code Quality Authority <code-quality@python.org>
+License: GPL-2.0-or-later
+Location: C:\Users\Israel\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages
+Requires: astroid, colorama, dill, isort, mccabe, platformdirs, tomlkit
+Required-by:
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python -m pylint computeSales.py
+************* Module computeSales
+computeSales.py:18:0: C0301: Line too long (109/100) (line-too-long)
+computeSales.py:33:0: C0301: Line too long (108/100) (line-too-long)
+computeSales.py:36:0: C0301: Line too long (101/100) (line-too-long)
+computeSales.py:38:0: C0301: Line too long (124/100) (line-too-long)
+computeSales.py:53:0: C0301: Line too long (105/100) (line-too-long)
+computeSales.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+computeSales.py:1:0: C0103: Module name "computeSales" doesn't conform to snake_case naming style (invalid-name)
+
+-----------------------------------
+Your code has been rated at 8.91/10
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python -m pylint computeSales.py
+************* Module computeSales
+computeSales.py:39:27: E0001: Parsing failed: 'unterminated string literal (detected at line 39) (computeSales, line 39)' (syntax-error)
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python -m pylint computeSales.py
+************* Module computeSales
+computeSales.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+computeSales.py:1:0: C0103: Module name "computeSales" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.69/10 (previous run: 8.91/10, +0.78)
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python -m pylint computeSales.py
+************* Module computeSales
+computeSales.py:1:0: C0103: Module name "computeSales" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.84/10 (previous run: 9.69/10, +0.16)
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python -m pylint computeSales.py
+************* Module ComputeSales
+computeSales.py:1:0: C0103: Module name "ComputeSales" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.84/10 (previous run: 9.84/10, +0.00)
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python -m pylint ComputeSales.py
+************* Module ComputeSales
+ComputeSales.py:1:0: C0103: Module name "ComputeSales" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.84/10 (previous run: 9.84/10, +0.00)
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python -m pylint compute_Sales.py
+************* Module compute_Sales
+compute_Sales.py:1:0: C0103: Module name "compute_Sales" doesn't conform to snake_case naming style (invalid-name)
+
+-----------------------------------
+Your code has been rated at 9.84/10
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python -m pylint compute_sales.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.84/10, +0.16)
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2>

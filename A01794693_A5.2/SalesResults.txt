@@ -1,0 +1,22 @@
+### Resultados de Ventas ###
+
+Archivo procesado: TC1.Sales.json
+Total de ventas: $2,481.86
+
+Archivo procesado: TC2.Sales.json
+Total de ventas: $169,478.22
+
+Archivo procesado: TC3.Sales.json
+Total de ventas: $168,145.36
+
+### Resumen Global ###
+Total de ventas combinadas: $340,105.44
+Tiempo de ejecución: 0.0000 segundos
+
+### Advertencias Encontradas ###
+[TC2.Sales.json] Cantidad negativa ignorada para Fresh blueberries: -35
+[TC2.Sales.json] Cantidad negativa ignorada para Green smoothie: -123
+[TC3.Sales.json] Producto no encontrado en catálogo: Elotes (Asignado precio $0.00)
+[TC3.Sales.json] Cantidad negativa ignorada para Fresh blueberries: -35
+[TC3.Sales.json] Producto no encontrado en catálogo: Frijoles (Asignado precio $0.00)
+[TC3.Sales.json] Cantidad negativa ignorada para Green smoothie: -123

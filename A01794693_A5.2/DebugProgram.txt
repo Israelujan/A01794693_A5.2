@@ -1,0 +1,95 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python computeSales.py TC1.ProductList.json TC1.Sales.json TC2.Sales.json TC3.Sales.json
+### Resultados de Ventas ###
+
+Archivo procesado: TC1.Sales.json
+Total de ventas: $2,481.86
+
+Archivo procesado: TC2.Sales.json
+Total de ventas: $169,478.22
+
+Archivo procesado: TC3.Sales.json
+Total de ventas: $168,145.36
+
+### Resumen Global ###
+Total de ventas combinadas: $340,105.44
+Tiempo de ejecución: 0.0453 segundos
+
+### Errores Encontrados ###
+[TC2.Sales.json] Cantidad inválida para Fresh blueberries: -35
+[TC2.Sales.json] Cantidad inválida para Green smoothie: -123
+[TC3.Sales.json] Producto no encontrado en catálogo: Elotes
+[TC3.Sales.json] Cantidad inválida para Fresh blueberries: -35
+[TC3.Sales.json] Producto no encontrado en catálogo: Frijoles
+[TC3.Sales.json] Cantidad inválida para Green smoothie: -123
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> del SalesResults.txt
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python computeSales.py TC1.ProductList.json TC1.Sales.json TC2.Sales.json TC3.Sales.json
+### Resultados de Ventas ###
+
+Archivo procesado: TC1.Sales.json
+Total de ventas: $2,481.86
+
+Archivo procesado: TC2.Sales.json
+Total de ventas: $172,388.21
+
+Archivo procesado: TC3.Sales.json
+Total de ventas: $171,055.35
+
+### Resumen Global ###
+Total de ventas combinadas: $345,925.42
+Tiempo de ejecución: 0.0010 segundos
+
+### Advertencias Encontradas ###
+[TC3.Sales.json] Producto no encontrado en catálogo: Elotes (Asignado precio $0.00)
+[TC3.Sales.json] Producto no encontrado en catálogo: Frijoles (Asignado precio $0.00)
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python computeSales.py TC1.ProductList.json TC1.Sales.json TC2.Sales.json TC3.Sales.json
+### Resultados de Ventas ###
+
+Archivo procesado: TC1.Sales.json
+Total de ventas: $2,481.86
+
+Archivo procesado: TC2.Sales.json
+Total de ventas: $172,388.21
+
+Archivo procesado: TC3.Sales.json
+Total de ventas: $171,055.35
+
+### Resumen Global ###
+Total de ventas combinadas: $345,925.42
+Tiempo de ejecución: 0.0014 segundos
+
+### Advertencias Encontradas ###
+[TC3.Sales.json] Producto no encontrado en catálogo: Elotes (Asignado precio $0.00)
+[TC3.Sales.json] Producto no encontrado en catálogo: Frijoles (Asignado precio $0.00)
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2> python computeSales.py TC1.ProductList.json TC1.Sales.json TC2.Sales.json TC3.Sales.json
+### Resultados de Ventas ###
+
+Archivo procesado: TC1.Sales.json
+Total de ventas: $2,481.86
+
+Archivo procesado: TC2.Sales.json
+Total de ventas: $169,478.22
+
+Archivo procesado: TC3.Sales.json
+Total de ventas: $168,145.36
+
+### Resumen Global ###
+Total de ventas combinadas: $340,105.44
+Tiempo de ejecución: 0.0000 segundos
+
+### Advertencias Encontradas ###
+[TC2.Sales.json] Cantidad negativa ignorada para Fresh blueberries: -35
+[TC2.Sales.json] Cantidad negativa ignorada para Green smoothie: -123
+[TC3.Sales.json] Producto no encontrado en catálogo: Elotes (Asignado precio $0.00)
+[TC3.Sales.json] Cantidad negativa ignorada para Fresh blueberries: -35
+[TC3.Sales.json] Producto no encontrado en catálogo: Frijoles (Asignado precio $0.00)
+[TC3.Sales.json] Cantidad negativa ignorada para Green smoothie: -123
+
+PS D:\Users\Israel\Downloads\Maestria\Trimestre_6\Pruebas de software y aseguramiento de la calidad\5.2 Ejercicio de programación 2 y análisis estático\A01794693_A5.2>
